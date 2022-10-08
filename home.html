@@ -6,16 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixxo - home</title>
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
+    <script defer src="JS/main.js"></script>
 
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-    
-    
+    <header>
+        <div class="container">
+            <nav class="navbar flex c-between">
+                <a href="#" class="navbar-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="hamburger-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contacts</a>
+                </nav>
+                <a class="fixxo-logo c-center" href="#"><img src="images/fixxo-icon.svg" alt="Fixxo"></a>
+                <div class="navbar-middle-links">
+                    <a href="#">Home</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div class="navbar-right-links">
+                    <a href="#"><i class="fa-regular fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-regular fa-shuffle"></i></a>
+                    <a id="favourites" href="#"><i class="fa-regular fa-heart"></i>
+                        <span class="notification">
+                            1
+                        </span>
+                    </a>
+                    <a id="cart" href="#"><i class="fa-regular fa-bag-shopping"></i>
+                        <span class="notification">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="showcase">
+        <div class="container flex c-center">
+            <img class="girl-on-chair" src="images/girl-on-chair.png" alt="Girl-on-chair">
+            <div class="showcase-text">
+                <h1>SALE UP<span>To 50% Off</span></h1>
+                <p>Online shopping free home delivery over $100</p>
+                <button href="#" type="button" class="button-theme">
+                    <div class="inside-button">SHOP NOW</div>
+                </button>
+            </div>
+            <img class="person-in-coat" src="images/person-in-coat.png" alt="Person-in-coat">
+        </div>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="winter-promo">
+                <img src="images/arms-over-head.png" alt="Girl-with-arms-over-head">
+                <h1>Winter Clearance<span>Up to 70% Off!</span></h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem apriam eaque ipsa quae ab illo inventore.</p>
+                <button href="#" type="button" class="button-theme-dark">SHOP NOW</button>
+            </div>
+            <div class="new-arrivals-promo">
+                <img class="leaning-boy" src="images/leaning-boy.png" alt="Leaning-boy">
+                <h1>NEW<span>Arrivals</span></h1>
+                <button href="#" type="button" class="button-theme-dark">SHOP NOW</button>
+            </div>
+        </div>
+    </section>
 
+
+    
 </body>
 </html>

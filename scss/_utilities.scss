@@ -1,0 +1,71 @@
+//FLEX
+
+.flex {display: flex;}
+
+.c-end {justify-content: end;}
+.c-center {justify-content: center;}
+.c-start {justify-content: start;}
+.c-between {justify-content: space-between;}
+.c-evenly {justify-content: space-evenly;}
+
+//GRID
+
+.grid {display: grid;}
+
+
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include sm {
+        max-width: $breakpoint-sm-max-width;
+    }
+    @include md {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include lg {
+        max-width: $breakpoint-lg-max-width;
+    }
+    @include xl {
+        max-width: $breakpoint-xl-max-width;
+    }
+    @include xxl {
+        max-width: $breakpoint-xxl-max-width;
+    }
+    @include xxxl {
+        max-width: $breakpoint-xxxl-max-width;
+    }
+
+}
+
+.button-theme {
+    background-color: $color-theme-red;
+    border: none;
+    padding: 0.5rem 0.6rem;
+    font-size: $font-size-16;
+    font-weight: $font-weight-semibold;
+
+    .inside-button {
+        border: 2px solid white;
+        padding: 0.2rem 0.9rem;
+        color: white;
+    }
+}
+
+.button-theme-dark {
+    background-color: $color-dark-10;
+    border: none;
+    padding: 0.5rem 0.6rem;
+    font-size: $font-size-16;
+    font-weight: $font-weight-semibold;
+    color: white;
+
+    .inside-button {
+        border: 1px solid white;
+        padding: 0.2rem 0.9rem;
+        color: white;
+    }
+}

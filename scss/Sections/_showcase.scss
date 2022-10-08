@@ -1,0 +1,97 @@
+.showcase {
+    padding-top: 1rem;
+    background-color: $color-grey-10;
+
+    @include sm {
+        padding-top: 2rem;
+    }
+
+    > .container {
+        align-items: center;
+        text-align: center;
+
+        @include sm {
+            justify-content: space-between;
+        }
+
+        > img {
+            display: none;
+
+            @include sm {
+                display: inline;
+                max-width: 33%;
+            }
+        }
+        .showcase-text {
+            text-align: center;
+            
+            h1{
+                margin: 0;
+                font-size: $font-size-35;
+                font-weight: $font-weight-extra-bold;
+
+                @include sm {
+                    font-size: 2rem;
+                }
+
+                @include md {
+                    font-size: $font-size-45;
+                }
+
+                @include lg {
+                    font-size: $font-size-45;
+                }
+
+                @include xl {
+                    font-size: $font-size-65;
+                    line-height: 4rem;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+
+            p {
+                font-size: $font-size-13;
+                width:  max-content;
+                text-align: center;
+                font-weight: $font-weight-regular;
+                margin: 1rem 0;
+
+                @include sm {
+                    width: 10rem;
+                }
+
+                @include md {
+                    font-size: $font-size-13;
+                    width: 16rem;
+                }
+
+                @include lg {
+                    font-size: $font-size-16;
+                    width: 17rem;
+                }
+
+                @include xl {
+                    width: max-content;
+                    margin-top: 2rem;
+                    margin-bottom: 3rem;
+                }
+            }
+
+            > .button-theme {
+                margin-bottom: 1rem;
+                padding: 0.4rem;
+                font-size: 0.7rem;
+
+                @include md {
+                    font-size: $font-size-16;
+                }
+
+            }
+        }
+    }
+
+
+}

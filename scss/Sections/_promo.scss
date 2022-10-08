@@ -1,0 +1,194 @@
+.promo {
+
+    padding-top: 2rem;
+
+    > .container {
+
+        @include lg {
+            display: flex;
+        }
+        
+        .winter-promo {
+
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            h1 {
+                position: absolute;
+                top: 25%;
+                left: 5%;
+                font-size: 1rem;
+                font-weight: $font-weight-bold;
+
+                @include sm {
+                    font-size: 1.5rem;
+                }
+
+                @include md {
+                    font-size: 2rem;
+                }
+
+                @include lg {
+                    font-size: 1.5rem;
+                    top: 15%;
+                }
+                
+                @include xl {
+                    top: 20%;
+                    font-size: 1.9rem;
+                }
+
+                @include xxl {
+                    font-size: 2.4rem;
+                }
+
+                @include xxxl {
+                    font-size: $font-size-45;
+                }
+            }
+
+            span {
+                display: block;
+            }
+
+            p {
+                position: absolute;
+                top: 45%;
+                left: 5%;
+                width: 17rem;
+                font-size: 0.7rem;
+                display: none;
+
+                @include lg {
+                    display: block;
+                }
+
+                @include xl {
+                    top: 55%;
+                    width: 23rem;
+                    font-size: 0.8rem;
+                }
+
+                @include xxl {
+                    font-size: $font-size-13;
+                    width: 23rem;
+                }
+
+                @include xxxl {
+                    font-size: $font-size-16;
+                    width: 27rem;
+                }
+            }
+
+            > button {
+                position: absolute;
+                left: 5%;
+                top: 70%;
+                font-size: $font-size-13;
+
+                @include sm {
+                    padding: 0.7rem 1rem;
+                    font-size: $font-size-16;
+                }
+
+                @include lg {
+                    top: 80%;
+                }
+
+                @include xxxl {
+                    padding: 1rem 2rem;
+                }
+            }
+            
+        }
+
+        .new-arrivals-promo {
+
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 183px;
+
+                @include sm {
+                    height: 272.22px;
+                }
+
+                @include md {
+                    height: 368.69px;
+                }
+
+                @include lg {
+                    height: 100%;
+                }
+                
+            }
+
+            h1 {
+                position: absolute;
+                left: 5%;
+                top: 15%;
+                font-size: 1.3rem;
+                font-weight: $font-weight-bold;
+
+                @include sm {
+                    font-size: $font-size-35;
+                }
+                
+                @include md {
+                    font-size: 2.4rem;
+                    top: 25%;
+                }
+
+                @include lg {
+                    font-size: 1.7rem;
+                    top: 35%;
+                }
+
+                @include xl {
+                    font-size: $font-size-35;
+                }
+                
+                @include xxl {
+                    font-size: $font-size-35;
+                }
+
+                @include xxxl {
+                    font-size: $font-size-45;
+                    top: 40%;
+                }
+            }
+
+            span {
+                display: block;
+            }
+
+            > button {
+                position: absolute;
+                left: 5%;
+                top: 70%;
+                font-size: $font-size-13;
+
+                @include sm {
+                    top: 75%;
+                    font-size: $font-size-16;
+                    padding: 0.7rem 1rem;
+                }
+
+                @include lg {
+                    top: 80%;
+                }
+
+                @include xxxl {
+                    padding: 1rem 2rem;
+                }
+            }
+            
+        }
+    }
+
+}
