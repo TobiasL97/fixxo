@@ -7,8 +7,25 @@ header {
         font-size: $font-size-16;
         font-weight: $font-weight-medium;
 
-    .navbar-menu {
+    .hamburger-icon {
         position: absolute;
+
+        &.is-active {
+
+            span:first-child {
+                transform: translateY(0.5rem) rotate(45deg);
+                
+            }
+            
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:last-child {
+                transform: translateY(-0.5rem) rotate(-45deg);
+            }
+            
+        }
         .bar {
             display: block;
             right: 1rem;
@@ -16,6 +33,7 @@ header {
             height: 0.2rem;
             margin: 0.3rem 0;
             background-color: $color-dark-20;
+            transition: 0.3s ease-in-out;
             
             @include lg {
                 display: none;
