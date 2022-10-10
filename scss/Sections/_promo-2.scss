@@ -1,0 +1,189 @@
+.promo-2 {
+    margin-top: 4rem;
+    
+    > .container {
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+        }
+        .pamela-reif {
+            position: relative;
+            img {
+                max-width: 100%;
+                height: 100%;
+                margin-bottom: 1rem;
+
+                @include lg {
+                    max-width: 98%;
+                }
+            }
+
+            .pamela-reif-content {
+                position: absolute;
+                top: 10%;
+                right: 10%;
+
+                @include lg {
+                    top: 0%;
+                    right: 5%;
+                }
+
+                @include xl {
+                    top: 10%;
+                    right: 10%;
+                }
+
+                @include xxl {
+                    top: 20%;
+                    right: 10%;
+                }
+
+                @include xxxl {
+                    top: 10%;
+                    right: 10%;
+                }
+
+                h1 {
+                    font-size: 5vw;
+                    color: white;
+                    font-weight: bold;
+
+                    @include sm {
+                        font-size: 1.7rem;
+                    }
+
+                    @include md {
+                        font-size: $font-size-35;
+                    }
+
+                    @include lg {
+                        font-size: 2rem;
+                    }
+
+                    @include xxxl {
+                        font-size: $font-size-45;
+                    }
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                button {
+                    font-size: $font-size-13;
+                    padding: 2vw;
+                    font-weight: $font-weight-semibold;
+
+                    @include sm {
+                        padding: 0.7rem;
+                    }
+
+                    @include md {
+                        padding: 1rem 1.5rem;
+                    }
+
+                    @include lg {
+                        padding: 0.7rem;
+                    }
+
+                    @include xxl {
+                        padding: 1rem 1.5rem;
+                    }
+
+                    @include xxxl {
+                        padding: 1rem 2rem;
+                    }
+                }
+            }
+            
+        }
+
+        .mountain-of-clothes {
+            position: relative;
+            img {
+                max-width: 100%;
+                height: 100%;
+
+                @include lg {
+                    max-width: 98%;
+                }
+            }
+
+            .mountain-of-clothes-content {
+                position: absolute;
+                top: 10%;
+                left: 10%;
+
+                @include lg {
+                    top: 0%;
+                    left: 5%;
+                }
+
+                @include xl {
+                    top: 10%;
+                    left: 10%;
+                }
+
+                @include xxl {
+                    top: 20%;
+                    left: 10%;
+                }
+
+                @include xxxl {
+                    top: 10%;
+                    left: 10%;
+                }
+
+                > h1 {
+                    font-size: 5vw;
+                    font-weight: bold;
+                    span {
+                        display: block;
+                    }
+
+                    @include sm {
+                        font-size: 1.7rem;
+                    }
+
+                    @include md {
+                        font-size: $font-size-35;
+                    }
+
+                    @include lg {
+                        font-size: 2rem;
+                    }
+
+                    @include xxxl {
+                        font-size: $font-size-45;
+                    }
+                }
+
+                button {
+                    font-size: $font-size-13;
+                    font-weight: $font-weight-semibold;
+                    padding: 2vw;
+
+                    @include sm {
+                        padding: 0.7rem;
+                    }
+
+                    @include md {
+                        padding: 1rem 1.5rem;
+                    }
+
+                    @include lg {
+                        padding: 0.7rem;
+                    }
+
+                    @include xxl {
+                        padding: 1rem 1.5rem;
+                    }
+
+                    @include xxxl {
+                        padding: 1rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
