@@ -13,6 +13,8 @@
 .grid {display: grid;}
 
 
+// CONTAINERS
+
 .container {
     max-width: 100%;
     margin-left: auto;
@@ -39,6 +41,27 @@
         max-width: $breakpoint-xxxl-max-width;
     }
 
+}
+
+.container-small {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include sm {
+        max-width: $breakpoint-sm-max-width;
+    }
+    @include md {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include lg {
+        max-width: $breakpoint-lg-max-width;
+    }
+    @include xl {
+        max-width: $breakpoint-xl-max-width;
+    }
 }
 
 .button-theme {
