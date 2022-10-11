@@ -1,0 +1,84 @@
+.our-speciality {
+    
+    margin-top: 3rem;
+
+    > .container {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(3, 125px);
+        gap: 2rem;
+        justify-content: center;
+        padding-top: 2rem;
+        background-color: $color-off-white;
+
+        @include sm {
+            grid-template-columns: 350px;
+            grid-template-rows: repeat(3, 150px);
+        }
+
+        @include md {
+            grid-template-columns: 380px;
+            grid-template-rows: repeat(3, 160px);
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 149px;
+            padding: 4rem 2rem 2rem 2rem;
+        }
+
+        @include xl {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 200px;
+            padding: 6.875rem 4.375rem 4.375rem 4.375rem;
+        }
+
+        @include xxl {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 232px;
+        }
+        
+        .speciality-boxes {
+            display: flex;
+            background-color: white;
+            align-items: center;
+            height: 100%;
+
+            .speciality-boxes-text {
+                width: 50%;
+                padding-left: 5%;
+
+                h1 {
+                    font-size: $font-size-13;
+                    font-weight: $font-weight-semibold;
+                    margin-bottom: 0.5rem;
+
+                    @include md {
+                        font-size: $font-size-16;
+                    }
+
+                    @include lg {
+                        font-size: $font-size-13;
+                    }
+
+                    @include xl {
+                        font-size: $font-size-16;
+                    }
+
+                    > span {
+                        display: block;
+                    }
+                }
+
+                > a {
+                    font-size: $font-size-13;
+                }
+            }
+
+            .grey-box {
+                background-color: $color-gray-40;
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+}

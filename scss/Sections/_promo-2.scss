@@ -12,10 +12,6 @@
                 max-width: 100%;
                 height: 100%;
                 margin-bottom: 1rem;
-
-                @include lg {
-                    max-width: 98%;
-                }
             }
 
             .pamela-reif-content {
@@ -103,10 +99,6 @@
             img {
                 max-width: 100%;
                 height: 100%;
-
-                @include lg {
-                    max-width: 98%;
-                }
             }
 
             .mountain-of-clothes-content {
