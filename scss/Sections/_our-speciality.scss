@@ -1,13 +1,30 @@
 .our-speciality {
-    
-    margin-top: 3rem;
+    position: relative;
+    margin-top: 4rem;
 
-    > .container {
+    > h1 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: $font-size-20;
+        font-weight: $font-weight-bold;
+
+        @include md {
+            top: 4%;
+        }
+
+        @include lg {
+            top: 7%;
+        }
+    }
+
+    > .our-speciality-grid {
         grid-template-columns: 300px;
         grid-template-rows: repeat(3, 125px);
         gap: 2rem;
         justify-content: center;
-        padding-top: 2rem;
+        padding: 6.875rem 4.375rem 4.375rem 4.375rem;
         background-color: $color-off-white;
 
         @include sm {
@@ -23,7 +40,7 @@
         @include lg {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 149px;
-            padding: 4rem 2rem 2rem 2rem;
+            padding: 6.875rem 4.375rem 4.375rem 4.375rem;
         }
 
         @include xl {
@@ -51,6 +68,7 @@
                     font-size: $font-size-13;
                     font-weight: $font-weight-semibold;
                     margin-bottom: 0.5rem;
+                    color: $color-dark-10;
 
                     @include md {
                         font-size: $font-size-16;
@@ -64,6 +82,10 @@
                         font-size: $font-size-16;
                     }
 
+                    @include xxl {
+                        font-size: $font-size-20;
+                    }
+
                     > span {
                         display: block;
                     }
@@ -71,6 +93,18 @@
 
                 > a {
                     font-size: $font-size-13;
+                    color: $color-dark-10;
+                    text-decoration: underline;
+                    text-underline-offset: 20%;
+                    
+
+                    > i {
+                        text-decoration: underline;
+                    }
+
+                    @include xxl {
+                        font-size: $font-size-16;
+                    }
                 }
             }
 
