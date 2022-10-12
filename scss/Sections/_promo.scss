@@ -84,14 +84,18 @@
                 }
             }
 
-            .button-theme-dark {
+            >.button-theme-dark {
                 position: absolute;
                 left: 5%;
                 top: 70%;
                 font-size: $font-size-13;
+                padding: 0.8rem 1rem;
 
                 @include sm {
                     padding: 0.7rem 1rem;
+                }
+
+                @include md {
                     font-size: $font-size-16;
                 }
 
@@ -167,11 +171,12 @@
                 display: block;
             }
 
-            .button-theme-dark {
+            > .button-theme-dark {
                 position: absolute;
                 left: 5%;
                 top: 70%;
                 font-size: $font-size-13;
+                padding: 0.5rem 1rem;
 
                 @include sm {
                     top: 75%;

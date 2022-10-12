@@ -1,0 +1,70 @@
+.shopping-grid {
+
+    margin-top: 2rem;
+
+    @include lg {
+        display: flex;
+        margin-top: 4rem;
+    }
+
+    .two-for-29 {
+        background-color: $color-gray-40;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+
+        @include lg {
+            width: 50%;
+            height: 664px;
+            margin-right: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        > .button-theme-light {
+            padding: 1rem 2rem;
+            width: 50%;
+
+        }
+
+        h1 {
+            color: white;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-35;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+    }
+
+    .product-grid {
+
+        margin-top: 1rem;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 323px);
+        gap: 2rem;
+    
+        @include md {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 323px);
+        }
+        
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 323px);
+            margin-top: 0rem;
+        }
+
+        @include xl {
+            grid-template-columns: repeat(2, 200px);
+        }
+
+        @include xxl {
+            @include xl {
+                grid-template-columns: repeat(2, 255px);
+            }
+        }
+    }
+}
