@@ -14,14 +14,22 @@
             justify-content: space-between;
         }
 
-        > img {
-            display: none;
-
-            @include sm {
-                display: inline;
-                max-width: 33%;
+        .img-left {
+            
+            > img {
+                margin-left: -120px;
+                max-width: 100%;
             }
         }
+
+        .img-right {
+            
+            > img {
+                margin-right: -220px;
+                max-width: 100%;
+            }
+        }
+        
         .showcase-text {
             text-align: center;
             
@@ -81,17 +89,12 @@
             }
 
             > .button-theme {
-                margin-bottom: 1rem;
-                padding: 0.4rem;
-                font-size: 0.7rem;
+                
 
                 @include md {
                     font-size: $font-size-16;
                 }
-
             }
         }
     }
-
-
 }
