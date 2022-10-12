@@ -1,0 +1,88 @@
+.big-sale {
+    margin-top: 4rem;
+
+    .big-sale-content {
+        background-color: $color-gray-45;
+        align-items: center;
+        text-align: center;
+        
+        .big-sale-text {
+            color: white;
+            padding-bottom: 2rem;
+
+            h1 {
+                font-size: $font-size-35;
+                margin-bottom: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            p {
+                font-size: $font-size-13;
+                margin-bottom: 2rem;
+            }
+
+            .button-theme-light {
+                padding: 0.6rem 2rem;
+                font-size: $font-size-16;
+
+                .button-theme-left,
+                .button-theme-right {
+                    height: 15px;
+                    width: 15px;
+                }
+            
+                .button-theme-left {
+                    top: 6px;
+                    left: 6px;
+                }
+            
+                .button-theme-right {
+                    bottom: 6px;
+                    right: 6px;
+                }
+            }
+        }
+    }
+
+    .big-sale-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 2rem;
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include xl {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .latest-products-grid {
+            gap: 1.5rem;
+            justify-content: center;
+
+            h1 {
+                margin-bottom: 0rem;
+            }
+        }
+
+        .best-selling-products-grid {
+            gap: 1.5rem;
+            justify-content: center;
+
+            h1 {
+                margin-bottom: 0rem;
+            }
+        }
+
+        .top-reacted-products-grid {
+            gap: 1.5rem;
+            justify-content: center;
+
+            h1 {
+                margin-bottom: 0rem;
+            }
+        }
+
+    }
+}
