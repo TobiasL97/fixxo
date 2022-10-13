@@ -1,11 +1,21 @@
 header {
     background-color: $color-gray-10;
+    position: relative;
 }
     .navbar {
-        padding-top: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         align-items: center;
         font-size: $font-size-16;
         font-weight: $font-weight-medium;
+        background-color: $color-gray-10;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+
+        @include lg {
+            position: relative;
+        }
 
     .hamburger-icon {
         position: absolute;
@@ -45,7 +55,7 @@ header {
     .hamburger-menu {
         display: block;
         position: fixed;
-        top: 4.5rem;
+        top: 5.5rem;
         right: 100%;
         width: 70%;
         min-height: 100vh;
