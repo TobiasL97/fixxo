@@ -66,28 +66,133 @@
                 }
 
                 > .button-theme-dark {
-                    font-size: $font-size-13;
-                    padding: 2vw;
+                    font-size: 0.6rem;
+                    padding: 10px 25px;
                     font-weight: $font-weight-semibold;
 
                     @include sm {
-                        padding: 0.7rem;
+                        font-size: $font-size-13;
                     }
 
                     @include md {
-                        padding: 1rem 1.5rem;
+                        padding: 15px 35px;
+                        font-size: $font-size-16;
                     }
 
                     @include lg {
-                        padding: 0.7rem;
+                        padding: 10px 25px;
+                        font-size: $font-size-13;
+                    }
+
+                    @include xl {
+                        
                     }
 
                     @include xxl {
-                        padding: 1rem 1.5rem;
+                        font-size: $font-size-16;
                     }
 
                     @include xxxl {
-                        padding: 1rem 2rem;
+                        padding: 15px 35px;
+                    }
+
+                    .button-theme-left,
+                    .button-theme-right {
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+
+                        @include md {
+                            height: 20px;
+                            width: 20px;
+                        }
+
+                        @include lg {
+                            height: 15px;
+                            width: 15px;
+                        }
+
+                        @include xxl {
+                            height: 15px;
+                            width: 15px;
+                        }
+
+                        @include xxxl {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                
+                    .button-theme-left {
+                        top: 5px;
+                        left: 5px;
+                        border-left: 2px solid white;
+                        border-top: 2px solid white;
+
+                        @include sm {
+                            top: 5px;
+                            left: 5px;
+                        }
+
+                        @include md {
+                            top: 10px;
+                            left: 10px;
+                            border-left: 2px solid white;
+                            border-top: 2px solid white;
+                        }
+
+                        @include lg {
+                            top: 5px;
+                            left: 5px;
+                            border-left: 2px solid white;
+                            border-top: 2px solid white;
+                        }
+
+                        @include xxl {
+                            top: 5px;
+                            left: 5px;
+                            border-left: 2px solid white;
+                            border-top: 2px solid white;
+                        }
+
+                        @include xxxl {
+                            top: 7px;
+                            left: 7px;
+                            border-left: 2px solid white;
+                            border-top: 2px solid white;
+                        }
+                    }
+                
+                    .button-theme-right {
+                        bottom: 5px;
+                        right: 5px;
+                        border-right: 2px solid white;
+                        border-bottom: 2px solid white;
+
+                        @include sm {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+
+                        @include md {
+                            bottom: 10px;
+                            right: 10px;
+                        }
+
+                        @include lg {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+
+                        @include xxl {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+
+                        @include xxxl {
+                            bottom: 7px;
+                            right: 7px;
+                        }
                     }
                 }
             }
@@ -150,29 +255,126 @@
                     }
                 }
 
-                >.button-theme-light {
-                    font-size: $font-size-13;
+                > .button-theme-light {
+                    font-size: 0.6rem;
+                    padding: 10px 25px;
                     font-weight: $font-weight-semibold;
-                    padding: 2vw;
 
                     @include sm {
-                        padding: 0.7rem;
+                        font-size: $font-size-13;
                     }
 
                     @include md {
-                        padding: 1rem 1.5rem;
+                        padding: 15px 35px;
+                        font-size: $font-size-16;
                     }
 
                     @include lg {
-                        padding: 0.7rem;
+                        padding: 10px 25px;
+                        font-size: $font-size-13;
+                    }
+
+                    @include xl {
+                        
                     }
 
                     @include xxl {
-                        padding: 1rem 1.5rem;
+                        font-size: $font-size-16;
                     }
 
                     @include xxxl {
-                        padding: 1rem 2rem;
+                        padding: 15px 35px;
+                    }
+
+                    .button-theme-left,
+                    .button-theme-right {
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+
+                        @include md {
+                            height: 20px;
+                            width: 20px;
+                        }
+
+                        @include lg {
+                            height: 15px;
+                            width: 15px;
+                        }
+
+                        @include xxl {
+                            height: 15px;
+                            width: 15px;
+                        }
+
+                        @include xxxl {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                
+                    .button-theme-left {
+                        top: 5px;
+                        left: 5px;
+                        border-left: 2px solid $color-dark-10;
+                        border-top: 2px solid $color-dark-10;
+
+                        @include sm {
+                            top: 5px;
+                            left: 5px;
+                        }
+
+                        @include md {
+                            top: 10px;
+                            left: 10px;
+                        }
+
+                        @include lg {
+                            top: 5px;
+                            left: 5px;
+                        }
+
+                        @include xxl {
+                            top: 5px;
+                            left: 5px;
+                        }
+
+                        @include xxxl {
+                            top: 7px;
+                            left: 7px;
+                        }
+                    }
+                
+                    .button-theme-right {
+                        bottom: 5px;
+                        right: 5px;
+                        border-right: 2px solid $color-dark-10;
+                        border-bottom: 2px solid $color-dark-10;
+
+                        @include sm {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+
+                        @include md {
+                            bottom: 10px;
+                            right: 10px;
+                        }
+
+                        @include lg {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+
+                        @include xxl {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+
+                        @include xxxl {
+                            bottom: 7px;
+                            right: 7px;
+                        }
                     }
                 }
             }
