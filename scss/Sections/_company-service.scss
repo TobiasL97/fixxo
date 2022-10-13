@@ -1,0 +1,117 @@
+.company-service {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 5rem;
+    padding-top: 4rem;
+    border-top: 2px solid $color-gray-30;
+
+    @include sm {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include md {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include lg {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .customer-support {
+
+        text-align: center;
+
+        > i {
+            font-size: $font-size-20;
+            box-shadow: 0 5px 10px 3px $color-gray-20;
+            border-radius: 50%;
+            padding: 0.7rem; 
+        }
+
+        > h1 {
+            font-size: $font-size-16;
+        }
+
+        > p {
+            font-size: $font-size-13;
+            
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .secured-payment {
+
+        text-align: center;
+
+        > i {
+            font-size: $font-size-20;
+            box-shadow: 0 5px 10px 3px $color-gray-20;
+            border-radius: 50%;
+            padding: 0.7rem; 
+        }
+
+        > h1 {
+            font-size: $font-size-16;
+        }
+
+        > p {
+            font-size: $font-size-13;
+            
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .free-home-delivery {
+
+        text-align: center;
+
+        > i {
+            font-size: $font-size-20;
+            box-shadow: 0 5px 10px 3px $color-gray-20;
+            border-radius: 50%;
+            padding: 0.7rem; 
+        }
+
+        > h1 {
+            font-size: $font-size-16;
+        }
+
+        > p {
+            font-size: $font-size-13;
+            
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .reuters {
+
+        text-align: center;
+
+        > i {
+            font-size: $font-size-20;
+            box-shadow: 0 5px 10px 3px $color-gray-20;
+            border-radius: 50%;
+            padding: 0.7rem; 
+        }
+
+        > h1 {
+            font-size: $font-size-16;
+        }
+
+        > p {
+            font-size: $font-size-13;
+            
+            span {
+                display: block;
+            }
+        }
+    }
+}

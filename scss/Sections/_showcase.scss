@@ -14,22 +14,9 @@
         .img-left {
             display: none;
             width: 33%;
-            margin-right: 2rem;
 
             @include sm {
                 display: inline;
-            }
-
-            @include lg {
-                margin-right: 5rem;
-            }
-
-            @include xl {
-                margin-right: 2rem;
-            }
-
-            @include xxl {
-                margin-right: 3.5rem;
             }
 
             @include xxxl {
@@ -41,22 +28,9 @@
         .img-right {
             display: none;
             width: 33%;
-            margin-left: 2rem;
 
             @include sm {
                 display: inline;
-            }
-
-            @include lg {
-                margin-left: 5rem;
-            }
-
-            @include xl {
-                margin-left: 2rem;
-            }
-
-            @include xxl {
-                margin-left: 3.5rem;
             }
 
             @include xxxl {
